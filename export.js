@@ -3,10 +3,11 @@ $(function() {
   // **************
   // Initialization
   // **************
-  const csvFileName = 'team-membership-roster-export.csv'
+  const csvFileName = 'team-membership-roster-export.txt'
   const csvDelimiter = ','
   const csvHeader = 'Display Name' + csvDelimiter + 'Title' + csvDelimiter + 'Location' + csvDelimiter + 'Role' + csvDelimiter + 'UPN' + '\r\n' // CSV header row
-  let csvContent = csvHeader // Initialize CSV content
+  // let csvContent = csvHeader // Initialize CSV content
+  let csvContent = ''
   const rosterLength = $('.td-member-display-name').length // Number of visible members
   
   // Check if we're an owner of the team
